@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'gothamblack';
+    src: url('../font/gotham-black-webfont.woff2') format('woff2'),
+         url('../font/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('../font/gotham-bold-webfont.woff2') format('woff2'),
+         url('../font/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambookitalic';
+    src: url('../font/gotham-bookitalic-webfont.woff2') format('woff2'),
+         url('../font/gotham-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../font/gotham-light-webfont.woff2') format('woff2'),
+         url('../font/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamthin';
+    src: url('../font/gotham-thin-webfont.woff2') format('woff2'),
+         url('../font/gotham-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamthinitalic';
+    src: url('gotham-thinitalic-webfont.woff2') format('woff2'),
+         url('gotham-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamultraitalic';
+    src: url('../font/gotham-ultraitalic-webfont.woff2') format('woff2'),
+         url('../font/gotham-ultraitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamxlight';
+    src: url('../font/gotham-xlight-webfont.woff2') format('woff2'),
+         url('../font/gotham-xlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamxlightitalic';
+    src: url('../font/gotham-xlightitalic-webfont.woff2') format('woff2'),
+         url('../font/gotham-xlightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('../font/gothambold-webfont.woff2') format('woff2'),
+         url('../font/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold_italic';
+    src: url('../font/gothambolditalic-webfont.woff2') format('woff2'),
+         url('../font/gothambolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('../font/gothambook-webfont.woff2') format('woff2'),
+         url('../font/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambook_italic';
+    src: url('../font/gothambookitalic-webfont.woff2') format('woff2'),
+         url('../font/gothambookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../font/gothamlight-webfont.woff2') format('woff2'),
+         url('../font/gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight_italic';
+    src: url('../font/gothamlightitalic-webfont.woff2') format('woff2'),
+         url('../font/gothamlightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../font/gothammedium_1-webfont.woff2') format('woff2'),
+         url('../font/gothammedium_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../font/gothammedium-webfont.woff2') format('woff2'),
+         url('../font/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../font/gothammediumitalic-webfont.woff2') format('woff2'),
+         url('../font/gothammediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+    background-color: #0D1117;
+}
+
+body
+{
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	position: relative;
+    font-family: 'gothambold';
+    color: #f2f2f2;
+}
+
+
+h1{
+    font-size: clamp(40px, 8vw, 80px);
+    color: var(--white);
+    
+}
+
+/* Style the navbar */
+#navbar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+  
+#navmain {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: all 250ms ease 0s;
+    transition-duration: 0.4s;
+  }
+  #navbar a:hover {
+    background-color: #0D1117;
+  }
+  
+  span{
+    background-color: #ce3b3b;
+    padding: 5px;
+  }
+
+  h2{
+    font-size: clamp(20px, 4vw, 40px);
+    line-height: 2em;
+    margin: 20px 0;
+  }
+
+  h3{
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+  }
+
+  p {
+    
+    font-size: 17px;
+    font-family: "gothambook";
+    color: #8F9094;
+  }
+
+
+  .para{
+    max-width: 480px;
+  }
+
+  button {
+    background-color: black;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-family: "gothambold";
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  }
+
+  button:hover{
+    background-color: #9b2b2b;
+  }
+
+  .fa-file, .fa-brands{
+    color: #ce3b3b;
+  }
+
+  a{
+    font-size: 1em;
+  }
+
+#portfolio, #contact {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+.pannel{
+    display: flex;
+    align-items: center;
+}
+
+video, img{
+    border-radius: 10px;
+    width: calc(clamp(300px, 40vw, 600px) * 1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+section#hero{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 50px;
+}
+
+.project_title{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.desc{
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.text-pannel-left{
+    margin: 0 30px;
+}
+
+.text-pannel-right{
+    margin: 0 30px;
+}
+
+.tags{
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.tags a{
+    text-decoration: none;
+    display: block;
+    color: #ce3b3b;
+    margin-right: 20px;
+}
+
+a:hover{
+    color: #ce3b3b;;
+    transition: all 250ms ease 0s;
+    transition-duration: 0.4s;
+}
+
+.desc{
+    padding: 20px;
+    background-color: #1b2430;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.test{
+    font-size: 25px;
+    color: #8F9094;;
+    margin-right: 20px;
+}
+.test2{
+    color: #0D1117;
+    font-size: 25px;
+    -webkit-text-stroke: 2px #ce3b3b;;
+}
+
+.links{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 100%;
+    text-align: none;
+    text-align: left;
+}
+
+.pannel{
+    padding: 60px 0;
+    justify-content: center;
+}
+
+
+i:hover{
+    color: #ce3b3b;;
+    transition: all 250ms ease 0s;
+    transition-duration: 0.4s;
+}
+.button-title{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 20px 0;
+    background-color: black;
+    text-align: center;
+}
+
+@media (max-width: 820px) {
+
+    button{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    #navmain a{
+        width: 100%;
+    }
+
+    #navbar{
+        display:none;
+    }
+
+    .pannel{
+        display: block;
+    }
+    .img-pannel{
+        display: none;
+    }
+}
+
+h4{
+    font-size: 23px;
+}

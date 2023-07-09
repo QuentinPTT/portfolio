@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Quentin Petit Portfolio</title>
+
+        <link rel="stylesheet" href="..\css\style.css">
+        <link rel="stylesheet" href="..\css\style2.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <script src="https://kit.fontawesome.com/8ac37b1bc4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="navmain">             
+                <a href="#hero">ABOUT ME</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT ME</a>
+                <a href="..">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-fr" viewBox="0 0 640 480" style="width: 19px ;">
+                        <g fill-rule="evenodd" stroke-width="1pt">
+                            <path fill="#fff" d="M0 0h640v480H0z"/>
+                            <path fill="#002654" d="M0 0h213.3v480H0z"/>
+                            <path fill="#ce1126" d="M426.7 0H640v480H426.7z"/>
+                        </g>
+                    </svg> 
+                </a>  
+            </div>
+        </nav>
+        <div id="particle-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <main>
+            <section id="hero">
+                <div class="content">
+                    <h1>Quentin Petit.</h1>
+                    <h2><span>Engineering student at ISAE Supmeca</span></h2>
+                    <div id="subtext">
+                        <p class="para" style="max-width: 900px;">🛠️ Currently in the first year of the engineering cycle</p>
+                        <br>
+                        <p class="para" style="max-width: 900px;">💡 "To have done more for the world than the world has done for you: that is success.", Henry Ford</p>
+                        <br>
+                    </div>
+                    <div id="boutton">
+                        <button onclick="window.location.href='../doc/cv.pdf'">
+                            <div class="button">
+                                <i class="fa-solid fa-file"> </i>
+                                <p class="button-title para">Resume</p>
+                            </div>
+                        </button>
+                        <button onclick="window.location.href='https://www.linkedin.com/in/quentinptt'">
+                            <div class="button">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <p class="button-title para">Linkedin</p>
+                            </div>
+                        </button>
+                        <button onclick="window.location.href='https://github.com/QuentinPTT'">
+                            <div class="button">
+                                <i class="fa-brands fa-github"> </i>
+                                <p class="button-title para">Github</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio"> 
+                <h3>Some of my <span>projects</span></h3>
+                <div class="pannel">
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/Just-Think-It" class="project_title">Just Think It</a>
+                        <div class="desc">
+                            <p class="para">Helping a motor handicapped person to acquire more autonomy based on the interpretation of EEG waves.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://www.python.org/" style="color: #ffd343;"><i class="fa-brands fa-python" style="color: #ffd343;"></i> Python</a>
+                            <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html" style="color: orange;"><i class="fa-solid fa-book-bookmark"style="color: orange;"></i> K-Nearest Neighbors</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/Just-Think-It"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel" onClick="window.open('https://github.com/QuentinPTT/Just-Think-It')" style="cursor: pointer;">
+                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
+                            <source src="../video/just_think_it.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+                <div class="pannel">
+                    <div class="img-pannel" onClick="window.open('../map')" style="cursor: pointer;">
+                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
+                            <source src="../video/map_project.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                    <div class="text-pannel-right">
+                        <a href="../map" class="project_title">Interactive Map</a>
+                        <div class="desc">
+                            <p class="para">Maps of the world and the continents allowing to add comments on each country</p>
+                        </div>
+                        <div class="tags">
+                            <a href="" style="color: #e34c26;"><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML</a>
+                            <a href="" style="color: #264de4;"><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS</a>
+                            <a href="" style="color: #f0db4f"><i class="fa-brands fa-js" style="color: #f0db4f"></i> JavaScript</a>
+                        </div>
+                        <div class="links">
+                            <a href=""><i class="fa-brands fa-github test"></i></a>
+                            <a href="../map"><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel">
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/Just-Think-It" class="project_title">LaCentrale Scraping</a>
+                        <div class="desc">
+                            <p class="para">Python script to access the private API of LaCentrale to retrieve all the ads checking predefined criteria by the user</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://www.python.org/"><i class="fa-brands fa-python" style="color: #ffd343;"></i> Python</a>
+                            <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html"><i class="fa-solid fa-book-bookmark"style="color: orange;"></i> API</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/Just-Think-It"><i class="fa-brands fa-github test"></i></a>
+                            <a href=""><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
+                            <source src="../video/just_think_it.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+                <div class="pannel">
+                    <div class="img-pannel">
+                        <img src="../img/arm.jpg" alt="">
+                    </div>
+                    <div class="text-pannel-right">
+                        <a href="" class="project_title">Manipulator arm</a>
+                        <div class="desc">
+                            <p class="para">Creation of an articulated arm in 3 dimensions with the help of numerous servomotors</p>
+                        </div>
+                        <div class="tags">
+                            <a href="" style="color: #4fccf3;"><i class="fa-solid fa-robot"></i> Arduino</a>
+                            <a href="" style="color: #645C60;"><i class="fa-solid fa-gears"></i> Robotics</a>
+                        </div>
+                        <div class="links">
+                            <a href=""><i class="fa-brands fa-github test"></i></a>
+                            <a href=""><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h3><span>Contact me</span></h3>
+                <h4>Interested in my profile ?</h4>
+                <br>
+                <h4 style="text-decoration: underline; text-underline-offset: 6px;"><a class="project_title" href="mailto:contact@quentinptt.fr" style="font-size: 23px;">contact@quentinptt.fr</a></h4>
+                <br>
+                <br>
+            </section>
+            <footer>
+                <div class="">
+                    <div class="footer">
+                        <p>Made by Quentin PETIT with ❤️</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    
+    
+    
+        
+    
+    </body>
+</html>

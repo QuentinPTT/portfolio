@@ -16,10 +16,12 @@
     <body>
         <nav id="navbar">
             <div id="navmain">
-                <a href="#hero">À PROPOS</a>
-                <a href="#portfolio">PORTFOLIO</a>
-                <a href="#contact">ME CONTACTER</a>
-                <a href="en">
+                <a class="nav-links" href="#hero">À PROPOS</a>
+                <a class="nav-links" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-links" href="#skills">COMPETENCES</a>
+                <a class="nav-links" href="#work">POSTES</a>
+                <a class="nav-links" href="#contact">ME CONTACTER</a>
+                <a class="nav-links" href="/en" onclick="location.href='/en'">
                     <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480" style="width: 19px;">
                         <g fill-rule="evenodd">
                           <g stroke-width="1pt">
@@ -80,43 +82,195 @@
             </section>
             <section id="portfolio"> 
                 <h3>Quelques <span>projets</span></h3>
-                <div class="pannel">
+                <div class="sorting-div">
+                    <p>Sort By : </p>
+                    <ul class="sorting-ul">
+                        <li class="sorting-li"><button id="date">Date</button></li>
+                        <li class="sorting-li"><button id="web">Web</button></li>
+                        <li class="sorting-li"><button id="ai">AI</button></li>
+                        <li class="sorting-li"><button id="hardware">Hardware</button></li>
+                        <li class="sorting-li"><button id="mobile">Mobile</button></li>
+                        <li class="sorting-li"><button id="scraping">Scraping</button></li>
+                    </ul>
+                </div>
+                <div class="pannel reveal web">
+                    <div class="text-pannel-left">
+                        <a href="https://artaste.fr" class="project_title">ARtaste</a>
+                        <div class="desc">
+                            <p class="para">Menu interactif pour restaurateurs avec réalité augmentée 3D pour visualiser les plats sur téléphone.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://nuxt.com/" style="color: #41B883; display: flex; align-items: center;"><img src="svg/nuxt.svg" alt="" height="20px" style="margin-right: 6px;"> Nuxt</a>
+                            <a href="https://supabase.com/" style="color: #41B883; display: flex; align-items: center;"><img src="svg/supabase.svg" alt="" height="20px" style="margin-right: 6px;"> Supabase</a>
+                            <a href="https://www.postgresql.org/" style="color: #336791; display: flex; align-items: center;"><img src="svg/postgresql.svg" alt="" height="20px" style="margin-right: 6px;"> PostgreSQL</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://artaste.fr"><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a href="https://artaste.fr"><img class="image-pannel" src="../img/blank.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="pannel reveal ai web mobile">
+                    <div class="img-pannel">
+                        <a href="https://cultin.fr"><img class="image-pannel" src="../img/blank.jpg" alt=""></a>
+                    </div>
+                    <div class="text-pannel-right">
+                        <a href="https://cultin.fr" class="project_title">Cultin</a>
+                        <div class="desc">
+                            <p class="para">Une plateforme innovante qui s'appuie sur des cours interactifs pour améliorer l'absorption des connaissances.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://www.python.org/" style="color: #000000; display: flex; align-items: center;"><img src="svg/nextjs.svg" alt="" height="20px" style="margin-right: 6px;"> NextJS</a>
+                            <a href="https://supabase.com/" style="color: #41B883; display: flex; align-items: center;"><img src="svg/supabase.svg" alt="" height="20px" style="margin-right: 6px;"> Supabase</a>
+                            <a href="https://www.postgresql.org/" style="color: #336791; display: flex; align-items: center;"><img src="svg/postgresql.svg" alt="" height="20px" style="margin-right: 6px;"> PostgreSQL</a>
+                            <a href="https://expressjs.com/fr/" style="color: #000000; display: flex; align-items: center;"><img src="svg/express.svg" alt="" height="20px" style="margin-right: 6px;"> Express</a>
+                            <a href="https://pytorch.org/" style="color: #EE4C2C; display: flex; align-items: center;"><img src="svg/pytorch.svg" alt="" height="20px" style="margin-right: 6px;"> PyTorch</a>
+                            <a href="https://flutter.dev/" style="color: #41d0fd; display: flex; align-items: center;"><img src="svg/flutter.svg" alt="" height="20px" style="margin-right: 6px;"> Flutter</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://cultin.fr"><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal web">
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/search-car-bar" class="project_title">Search Bar</a>
+                        <div class="desc">
+                            <p class="para">Une barre de recherche légère et conviviale construite en JavaScript pur, directement liée à un fichier de données JSON.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style="color: #f5de19; display: flex; align-items: center;"><img src="svg/js.svg" alt="" height="20px" style="margin-right: 6px;"> JavaScript</a>
+                            <a href="https://www.json.org/json-en.html" style="color: #7d7d7d; display: flex; align-items: center;"><img src="svg/json.svg" alt="" height="20px" style="margin-right: 6px;"> JSON</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/search-car-bar"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/search-car-bar"><img class="image-pannel" src="../img/searchbar.gif" alt=""></a>
+                    </div>
+                </div>
+                <div class="pannel reveal ai web">
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/car-identifieri"><img class="image-pannel" src="../img/car_identifier.png" alt=""></a>
+                    </div>
+                    <div class="text-pannel-right">
+                        <a href="https://github.com/QuentinPTT/car-identifier" class="project_title">Car Identifier</a>
+                        <div class="desc">
+                            <p class="para">Car-Identifier utilise un modèle VGG16 affiné et Flask pour identifier les marques et les modèles de voitures à partir d'images téléchargées.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://flask.palletsprojects.com/en/2.3.x/" style="color: #000000; display: flex; align-items: center;"><img src="svg/flask.svg" alt="" height="20px" style="margin-right: 6px;"> Flask</a>
+                            <a href="https://keras.io/" style="color: #D00000; display: flex; align-items: center;"><img src="svg/keras.svg" alt="" height="20px" style="margin-right: 6px;"> Keras</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/car-identifier"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal web">
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/react-philosopher-wiki" class="project_title">Philoflash</a>
+                        <div class="desc">
+                            <p class="para">Une application web responsive et personnalisable basée sur React présentant des biographies concises de philosophes célèbres stockées en JSON.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://fr.legacy.reactjs.org/" style="color: #00D8FF; display: flex; align-items: center;"><img src="svg/react.svg" alt="" height="20px" style="margin-right: 6px;"> React</a>
+                            <a href="https://flask.palletsprojects.com/en/2.3.x" style="color: #7d7d7d; display: flex; align-items: center;"><img src="svg/json.svg" alt="" height="20px" style="margin-right: 6px;"> JSON</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/react-philosopher-wiki"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/react-philosopher-wiki"><img class="image-pannel" src="../img/react_philosophie.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="pannel reveal web scraping">
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/notes-supmeca"><img class="image-pannel" src="../img/notes_supmeca.png" alt=""></a>
+                    </div>
+                    <div class="text-pannel-right">
+                        <a href="https://github.com/QuentinPTT/notes-supmeca" class="project_title">Notes ISAE-Supmeca</a>
+                        <div class="desc">
+                            <p class="para">Une application Flask rapide et efficace qui simplifie l'accès au portail en ligne de mon école.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://flask.palletsprojects.com/en/2.3.x/" style="color: #000000; display: flex; align-items: center;"><img src="svg/flask.svg" alt="" height="20px" style="margin-right: 6px;"> Flask</a>
+                            <a href="/" style="color: #fff; display: flex; align-items: center;"><img src="svg/api.svg" alt="" height="20px" style="margin-right: 6px;"> API</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/notes-supmeca"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal web">
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/scroll-around-cars" class="project_title">Scroll around Cars</a>
+                        <div class="desc">
+                            <p class="para">Une application web offrant une expérience de défilement transparent pour explorer tous les angles d'une voiture.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style="color: #f5de19; display: flex; align-items: center;"><img src="svg/js.svg" alt="" height="20px" style="margin-right: 6px;"> JavaScript</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/scroll-around-cars"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/scroll-around-cars"><img class="image-pannel" src="../img/thumbnail.gif" alt=""></a>
+                    </div>
+                </div>
+                <div class="pannel reveal web">
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/twitter-without-views"><img class="image-pannel" src="../img/twv.jpg" alt=""></a>
+                    </div>
+                    <div class="text-pannel-left">
+                        <a href="https://github.com/QuentinPTT/twitter-without-views" class="project_title">Twitter Without Views</a>
+                        <div class="desc">
+                            <p class="para">Extension Chrome en Javascript qui permet de désactiver le compteur de vue sur Twitter</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style="color: #f5de19; display: flex; align-items: center;"><img src="svg/js.svg" alt="" height="20px" style="margin-right: 6px;"> JavaScript</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/twitter-without-views"><i class="fa-brands fa-github test"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal ai hardware">
                     <div class="text-pannel-left">
                         <a href="https://github.com/QuentinPTT/Just-Think-It" class="project_title">Just Think It</a>
                         <div class="desc">
                             <p class="para">Aider un handicapé moteur à acquérir plus d'autonomie à partir de l'interprétation des ondes EEG.</p>
                         </div>
                         <div class="tags">
-                            <a href="https://www.python.org/" style="color: #ffd343;"><i class="fa-brands fa-python" style="color: #ffd343;"></i> Python</a>
-                            <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html" style="color: orange;"><i class="fa-solid fa-book-bookmark"style="color: orange;"></i> K-Nearest Neighbors</a>
+                            <a href="https://www.python.org" style="color: #249CFF; display: flex; align-items: center;"><img src="svg/python.svg" alt="" height="20px" style="margin-right: 6px;"> Python</a>
+                            <a href="https://scikit-learn.org/" style="color: #f89939; display: flex; align-items: center;"><img src="svg/scikit.svg" alt="" height="20px" style="margin-right: 6px;"> Scikit-Learn</a>
                         </div>
                         <div class="links">
                             <a href="https://github.com/QuentinPTT/Just-Think-It"><i class="fa-brands fa-github test"></i></a>
                         </div>
                     </div>
-                    <div class="img-pannel" onClick="window.open('https://github.com/QuentinPTT/Just-Think-It')" style="cursor: pointer;">
-                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
-                            <source src="video/just_think_it.mp4" type="video/mp4">
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
+                    <div class="img-pannel">
+                        <a href="https://github.com/QuentinPTT/Just-Think-It"><img class="image-pannel" src="../img/just_think_it.gif" alt=""></a>
                     </div>
                 </div>
-                <div class="pannel">
-                    <div class="img-pannel" onClick="window.open('map')" style="cursor: pointer;">
-                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
-                            <source src="video/map_project.mp4" type="video/mp4">
-                        Sorry, your browser doesn't support embedded videos.
-                        </video>
+                <div class="pannel reveal web">
+                    <div class="img-pannel">
+                        <a href="map"><img class="image-pannel" src="../img/map_project.gif" alt=""></a>
                     </div>
                     <div class="text-pannel-right">
                         <a href="map" class="project_title">Carte intéractive</a>
                         <div class="desc">
-                            <p class="para">Cartes du monde et des continents permettant d'ajouter des commentaires sur chaque pays</p>
+                            <p class="para">Carte du monde et des continents permettant d'ajouter des commentaires sur chaque pays</p>
                         </div>
                         <div class="tags">
-                            <a href="" style="color: #e34c26;"><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML</a>
-                            <a href="" style="color: #264de4;"><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS</a>
-                            <a href="" style="color: #f0db4f"><i class="fa-brands fa-js" style="color: #f0db4f"></i> JavaScript</a>
+                            <a href="https://html.spec.whatwg.org/multipage/" style="color: #E44D26; display: flex; align-items: center;"><img src="svg/html.svg" alt="" height="20px" style="margin-right: 6px;"> HTML</a>
+                            <a href="https://www.w3.org/Style/CSS/" style="color: #1172B8; display: flex; align-items: center;"><img src="svg/css.svg" alt="" height="20px" style="margin-right: 6px;"> CSS</a>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style="color: #f5de19; display: flex; align-items: center;"><img src="svg/js.svg" alt="" height="20px" style="margin-right: 6px;"> JavaScript</a>
                         </div>
                         <div class="links">
                             <a href=""><i class="fa-brands fa-github test"></i></a>
@@ -124,31 +278,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="pannel">
+                <div class="pannel reveal scraping">
                     <div class="text-pannel-left">
-                        <a href="https://github.com/QuentinPTT/Just-Think-It" class="project_title">Scraping LaCentrale</a>
+                        <a href="https://github.com/QuentinPTT/lacentrale-api" class="project_title">Scraping LaCentrale</a>
                         <div class="desc">
                             <p class="para">Script python permettant d’accéder à l’API privée de LaCentrale pour récupérer toutes les annonces vérifiant des critères prédéfinis par l’utilisateur</p>
                         </div>
                         <div class="tags">
-                            <a href="https://www.python.org/" style="color: #ffd343;"><i class="fa-brands fa-python" style="color: #ffd343;"></i> Python</a>
-                            <a href="https://www.python.org/" style="color: #800080;"><i class="fa-solid fa-book-atlas" style="color: #800080;"></i>   API</a>
+                            <a href="https://www.python.org" style="color: #249CFF; display: flex; align-items: center;"><img src="svg/python.svg" alt="" height="20px" style="margin-right: 6px;"> Python</a>
+                            <a href="/" style="color: #fff; display: flex; align-items: center;"><img src="svg/api.svg" alt="" height="20px" style="margin-right: 6px;"> API</a>
                         </div>
                         <div class="links">
-                            <a href="https://github.com/QuentinPTT/Just-Think-It"><i class="fa-brands fa-github test"></i></a>
-                            <a href=""><i class="fa-solid fa-play test2"></i></a>
+                            <a href="https://github.com/QuentinPTT/lacentrale-api"><i class="fa-brands fa-github test"></i></a>
                         </div>
                     </div>
                     <div class="img-pannel">
-                        <video max-width="200px" loop autoplay muted playsinline style="pointer-events: none;" >
-                            <source src="video/just_think_it.mp4" type="video/mp4">
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
+                        <a href="https://github.com/QuentinPTT/lacentrale-api"><img class="image-pannel" src="../img/scraping_lacentrale.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="pannel">
+                <div class="pannel reveal hardware">
                     <div class="img-pannel">
-                        <img src="../img/arm.jpg" alt="">
+                        <img class="image-pannel" src="../img/arm.jpg" alt="">
                     </div>
                     <div class="text-pannel-right">
                         <a href="" class="project_title">Bras manipulateur</a>
@@ -156,20 +306,170 @@
                             <p class="para">Création d'un bras articulé en 3 dimensions à l'aide de nombreux servomoteurs</p>
                         </div>
                         <div class="tags">
-                            <a href="" style="color: #4fccf3;"><i class="fa-solid fa-robot"></i> Arduino</a>
-                            <a href="" style="color: #645C60;"><i class="fa-solid fa-gears"></i> Robotique</a>
-                        </div>
-                        <div class="links">
-                            <a href=""><i class="fa-brands fa-github test"></i></a>
-                            <a href=""><i class="fa-solid fa-play test2"></i></a>
+                            <a href="/" style="color: #00979c; display: flex; align-items: center;"><img src="svg/arduino.svg" alt="" height="20px" style="margin-right: 6px;"> Arduino</a>
+                            <a href="" style="color: #645C60;"><i class="fa-solid fa-robot"></i> Robotique</a>
                         </div>
                     </div>
                 </div>
+                <div class="pannel reveal web">
+                    <div class="text-pannel-left">
+                        <a href="https://quentinptt.fr/" class="project_title">Portfolio</a>
+                        <div class="desc">
+                            <p class="para">Ma page personnelle actuelle faite en HTML, CSS et Javascript natif</p>
+                        </div>
+                        <div class="tags">
+                            <a href="https://html.spec.whatwg.org/multipage/" style="color: #E44D26; display: flex; align-items: center;"><img src="svg/html.svg" alt="" height="20px" style="margin-right: 6px;"> HTML</a>
+                            <a href="https://www.w3.org/Style/CSS/" style="color: #1172B8; display: flex; align-items: center;"><img src="svg/css.svg" alt="" height="20px" style="margin-right: 6px;"> CSS</a>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style="color: #f5de19; display: flex; align-items: center;"><img src="svg/js.svg" alt="" height="20px" style="margin-right: 6px;"> JavaScript</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/QuentinPTT/portfolio"><i class="fa-brands fa-github test"></i></a>
+                            <a href="https://quentinptt.fr/"><i class="fa-solid fa-play test2"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a href="https://quentinptt.fr/"><img class="image-pannel" src="../img/portfolio.jpg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <h3>Mes <span>Compétences</span></h3>
+                <div style="padding: 0 10%;">
+                    <div>
+                        <ul id="skills-menu">
+                            <li class="skills-categories"><a class="skills-button" id="web_dev_button">Web Development</a></li>
+                            <li class="skills-categories"><a class="skills-button" id="mobile_dev_button">Mobile Development</a></li>
+                            <li class="skills-categories"><a class="skills-button" id="hardware_button">Hardware</a></li>
+                            <li class="skills-categories"><a class="skills-button" id="machine_learning_button">Data / Machine Learning</a></li>
+                            <li class="skills-categories"><a class="skills-button" id="design_button">Design</a></li>
+                        </ul>
+                    </div>
+                    <div id="web_dev" class="skills-content">
+                        <div class="img-skill"><img src="svg/html.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/css.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/tailwindcss.svg    " height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/js.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/typescript.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/react.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/nextjs.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/vue.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/nuxt.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/supabase.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/postgresql.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/nodejs.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/express.svg" height="90px" alt=""></div>
+                    </div>
+                    <div id="mobile_dev" class="skills-content" style="display: none;">
+                        <div class="img-skill"><img src="svg/flutter.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/dart.svg" height="90px" alt=""></div>
+                    </div>
+                    <div id="hardware_dev" class="skills-content" style="display: none;">
+                        <div class="img-skill"><img src="svg/c.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/cplusplussvg.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/arduino.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/raspberry.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/python.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/rust.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/java.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/ocaml.svg" height="90px" alt=""></div>
+                    </div>
+                    <div id="machine_learning" class="skills-content" style="display: none;">
+                        <div class="img-skill"><img src="svg/python.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/tensorflow.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/keras.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/pytorch.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/scikit.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/pandas.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/numpy.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/matlab.svg" height="90px" alt=""></div>
+                    </div>
+                    <div id="design" class="skills-content" style="display: none;">
+                        <div class="img-skill"><img src="svg/photoshop.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/illustrator.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/indesign.svg" height="75px" alt=""></div>
+                        <div class="img-skill"><img src="svg/premiere.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/after.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/figma.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/canva.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/catia.svg" height="90px" alt=""></div>
+                        <div class="img-skill"><img src="svg/c4d.svg" height="90px" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section id="work">
+                <h3>Où ai-je <span>travaillé</span> ?</h3>
+                <div class="pannel reveal">
+                    <div class="img-pannel">
+                        <a><img class="image-pannel" src="../img/nexter_robotics.jpg" alt=""></a>
+                    </div>
+                    <div class="text-pannel-left">
+                        <a class="project_title">Nexter Robotics</a>
+                        <div class="desc">
+                            <p class="para">
+                                Stage Ingénieur - Elaboration d'un banc d'essai pour tester des cartes électroniques <br><br>
+                                🎯 Missions : <br>
+                                - Création d'un interfaçage de test mécanique en CAO<br>
+                                - Réalisation de l'électronique embarquée<br>
+                                - Réalisation du logiciel de validation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal">
+                    <div class="text-pannel-right">
+                        <a class="project_title">RATP - MRF T6</a>
+                        <div class="desc">
+                            <p class="para">
+                                Stage opérateur pour la découverte de la maintenance des tramways de la ligne T6 <br><br>
+                                🎯 Missions : <br>
+                                - Prise de mesures diverses (niveau d'huile..)<br>
+                                - Remplacement d’éléments usés (patins, galets..)<br>
+                                - Graissage<br>
+                                - Participation à la dépose/pose de tendeurs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a><img class="image-pannel" src="../img/ratp.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="pannel reveal">
+                    <div class="img-pannel">
+                        <a><img class="image-pannel" src="../img/sqy.jpg" alt=""></a>
+                    </div>
+                    <div class="text-pannel-left">
+                        <a class="project_title">SQY - Pôle informatique</a>
+                        <div class="desc">
+                            <p class="para">
+                                Stage de découverte à la communauté d'agglométation de SQY<br><br>
+                                🎯 Missions : <br>
+                                - Maintenance de serveurs (Cloud computing)<br>
+                                - Gestion de l'intranet (Sharepoint)<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel reveal">
+                    <div class="text-pannel-right">
+                        <a class="project_title">Massily</a>
+                        <div class="desc">
+                            <p class="para">
+                                Stage de découverte au sein de l'usine Massily à Verneuil d'Avre et d'Iton<br><br>
+                                🎯 Missions : <br>
+                                - Conception d'une bouteille à l'aide de Solidworks<br>
+                                - Bases du dessin industriel<br>
+                                - Découverte des procédés de fabrication<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-pannel">
+                        <a><img class="image-pannel" src="../img/ratp.jpg" alt=""></a>
+                    </div>
+                </div>
+                
             </section>
             <section id="contact">
-                <h3><span>Me contacter</span></h3>
-                <h4>Intéressé par mon profil ?</h4>
-                <br>
+                <h3>Me <span>Contacter</span></h3>
                 <h4 style="text-decoration: underline; text-underline-offset: 6px;"><a class="project_title" href="mailto:contact@quentinptt.fr" style="font-size: 23px;">contact@quentinptt.fr</a></h4>
                 <br>
                 <br>
@@ -182,10 +482,6 @@
                 </div>
             </footer>
         </main>
-    
-    
-    
-        
-    
     </body>
+    <script src="js/script.js" deter></script>
 </html>

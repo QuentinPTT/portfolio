@@ -276,7 +276,7 @@ h1{
     font-size: 1em;
   }
 
-#portfolio, #contact {
+#portfolio, #work, #skills, #contact {
     padding: 0% 10%;
     text-align: center;
 }
@@ -286,7 +286,7 @@ h1{
     align-items: center;
 }
 
-video, img{
+video, img.image-pannel{
     border-radius: 10px;
     width: calc(clamp(300px, 40vw, 600px) * 1.05);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -348,8 +348,10 @@ section#hero{
 
 .tags{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 15px;
     margin-left: 15px;
+    max-width: 480px;
 }
 
 .tags a{
@@ -357,12 +359,12 @@ section#hero{
     display: block;
     color: #ce3b3b;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 a:hover{
     color: #ce3b3b;;
     transition: all 250ms ease 0s;
-    transition-duration: 0.4s;
 }
 
 .desc{
@@ -445,4 +447,97 @@ footer{
 
 h4{
     font-size: 23px;
+}
+
+.sorting-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sorting-ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sorting-li{
+    margin: 0 20px;
+}
+
+button{
+    font-size: 15px;
+}
+
+#skills-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.skills-categories{
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.skills-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color: rgba(0, 0, 0, 0.31);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.img-skill{
+    margin: 40px;
+    transition: all 250ms ease 0s;
+    cursor: pointer;
+    animation: fadeIn 1s;
+}
+
+.img-pannel{
+    transition: all 250ms ease 0s;
+}
+
+.img-skill:hover, .img-pannel:hover{
+    transform: scale(1.05);
+    
+}
+
+a, button{
+    cursor: pointer;;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
